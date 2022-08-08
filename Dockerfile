@@ -1,4 +1,3 @@
-FROM node:alpine
-COPY . /app
-WORKDIR /app
-CMD node app.js
+FROM python:3.8
+ADD app.py .
+CMD [ "python", "./app.py" ]
